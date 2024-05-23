@@ -326,7 +326,7 @@ header .menu a:active {
 
 .about p,
 .menu ul {
-    text-align: center;
+    text-align: left;
 }
 
 .menu ul {
