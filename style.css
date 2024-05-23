@@ -324,9 +324,12 @@ header .menu a:active {
     font-family: 'Roboto Serif', serif;
 }
 
-.about p,
 .menu ul {
     text-align: center;
+}
+
+.about p {
+    text-align: left;
 }
 
 .menu ul {
