@@ -26,7 +26,7 @@ body {
 }
 
 .hero h2 {
-    color: #FFF8DC;
+    color: #BA9467;
     /* Change color of the h2 element */
     font-family: 'Roboto Serif', serif;
     font-weight: 900;
@@ -61,7 +61,7 @@ header {
     /* Light cream text */
     padding: 5px 0;
     /* height of navigation bar */
-    border-bottom: #FFF8DC 5px solid;
+    border-bottom: #BA9467 5px solid;
     /* Beige-brown border */
     display: flex;
     justify-content: space-between;
@@ -108,7 +108,7 @@ header a {
 }
 
 header a:hover {
-    color: #FFF8DC;
+    color: #BA9467;
     /* Beige-brown hover color */
 }
 
@@ -153,7 +153,7 @@ header .menu a {
 }
 
 header .menu a:active {
-    color: #FFF8DC;
+    color: #BA9467;
     /* Change font color to gold on click */
 }
 
@@ -200,7 +200,7 @@ header .menu a:active {
     }
 
     header .menu a:active {
-        color: #FFF8DC;
+        color: #BA9467;
         /* Change font color to gold on click */
     }
 
@@ -211,7 +211,7 @@ header .menu a:active {
     header li {
         text-align: center;
         padding: 15px 0;
-        /* border-top: 1px solid #FFF8DC; */
+        /* border-top: 1px solid #BA9467; */
         /* Beige-brown border */
     }
 
@@ -221,7 +221,7 @@ header .menu a:active {
     }
 
     header .hamburger:active span {
-        background: #FFF8DC;
+        background: #BA9467;
         bottom: 0;
         /* Change color of the hamburger menu when tapped */
     }
@@ -265,12 +265,12 @@ header .menu a:active {
     }
 
     header .menu a:active {
-        color: #FFF8DC;
+        color: #BA9467;
         /* Change font color to gold on click */
     }
 
     header .menu a:hover {
-        color: #FFF8DC;
+        color: #BA9467;
         /* Change font color to gold on hover */
     }
 
@@ -311,7 +311,7 @@ header .menu a:active {
 .contact h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #FFF8DC;
+    color: #BA9467;
     font-family: 'Roboto Serif', serif;
     font-weight: 900;
     /* Ensure the font-weight is set to 900 for 'Black' style */
@@ -375,7 +375,7 @@ header .menu.active+.overlay {
     max-width: 500px;
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid #FFF8DC;
+    border: 1px solid #BA9467;
     /* Beige-brown border */
     background: #F1EEE8;
     /* Light cream background */
@@ -386,7 +386,7 @@ header .menu.active+.overlay {
 .contact button {
     margin-top: 20px;
     padding: 10px 20px;
-    background: #FFF8DC;
+    background: #BA9467;
     /* Beige-brown background */
     border: 0;
     color: #F1EEE8;
