@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/ahmeraki_logo_transparent_background.png" alt="Coffee Shop Logo" />
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/menu.html">Menu</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+
+                <nav>
+                    <ul class="menu">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/menu.html">Menu</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <h3>Hot Coffee</h3>
+            <ul>
+                <li>Espresso - $3.00</li>
+            </ul>
+            <br />
+            <h3>Iced Coffee</h3>
+            <ul>
+                <li>Iced Latte - $3.00</li>
+            </ul>
+            <br />
+            <h3>Snacks</h3>
+            <ul>
+                <li>Garlic Bread - $3.00</li>
+            </ul>
+            <br />
+            <h3>Desserts</h3>
+            <ul>
+                <li>Rum Cake- $3.00</li>
+            </ul>
+            <br />
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ahmeraki Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector(".menu");
+            var overlay = document.querySelector(".overlay");
+            menu.classList.toggle("active"); // Toggle the 'active' class on the navigation menu
+            overlay.classList.toggle("active"); // Toggle the 'active' class on the overlay
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
