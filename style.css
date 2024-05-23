@@ -26,12 +26,12 @@ body {
 }
 
 .hero h2 {
-    color: #BA9467;
+    color: #FFF8DC;
     /* Change color of the h2 element */
 }
 
 .hero p {
-    color: #132508;
+    color: #132709;
     /* Change color of the p element */
 }
 
@@ -52,13 +52,13 @@ header .menu.active+.overlay {
 
 
 header {
-    background: #132508;
+    background: #132709;
     /* Dark green background */
     color: #F1EEE8;
     /* Light cream text */
     padding: 5px 0;
     /* height of navigation bar */
-    border-bottom: #BA9467 5px solid;
+    border-bottom: #FFF8DC 5px solid;
     /* Beige-brown border */
     display: flex;
     justify-content: space-between;
@@ -105,7 +105,7 @@ header a {
 }
 
 header a:hover {
-    color: #BA9467;
+    color: #FFF8DC;
     /* Beige-brown hover color */
 }
 
@@ -143,14 +143,14 @@ header .menu li {
 }
 
 header .menu a {
-    color: #132508;
+    color: #132709;
     /* Change font color to black */
     text-decoration: none;
     font-size: 18px;
 }
 
 header .menu a:active {
-    color: #BA9467;
+    color: #FFF8DC;
     /* Change font color to gold on click */
 }
 
@@ -167,7 +167,7 @@ header .menu a:active {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: #132508;
+        background: #132709;
         /* Dark green background */
         position: absolute;
         top: 70px;
@@ -197,7 +197,7 @@ header .menu a:active {
     }
 
     header .menu a:active {
-        color: #BA9467;
+        color: #FFF8DC;
         /* Change font color to gold on click */
     }
 
@@ -208,7 +208,7 @@ header .menu a:active {
     header li {
         text-align: center;
         padding: 15px 0;
-        /* border-top: 1px solid #BA9467; */
+        /* border-top: 1px solid #FFF8DC; */
         /* Beige-brown border */
     }
 
@@ -218,7 +218,7 @@ header .menu a:active {
     }
 
     header .hamburger:active span {
-        background: #BA9467;
+        background: #FFF8DC;
         bottom: 0;
         /* Change color of the hamburger menu when tapped */
     }
@@ -262,12 +262,12 @@ header .menu a:active {
     }
 
     header .menu a:active {
-        color: #BA9467;
+        color: #FFF8DC;
         /* Change font color to gold on click */
     }
 
     header .menu a:hover {
-        color: #BA9467;
+        color: #FFF8DC;
         /* Change font color to gold on hover */
     }
 
@@ -299,7 +299,7 @@ header .menu a:active {
     padding: 30px 0;
     background: #F1EEE8;
     /* Light cream background */
-    color: #132508;
+    color: #132709;
     /* Dark green text */
 }
 
@@ -308,7 +308,7 @@ header .menu a:active {
 .contact h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #BA9467;
+    color: #FFF8DC;
 }
 
 .menu h3 {
@@ -369,18 +369,18 @@ header .menu.active+.overlay {
     max-width: 500px;
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid #BA9467;
+    border: 1px solid #FFF8DC;
     /* Beige-brown border */
     background: #F1EEE8;
     /* Light cream background */
-    color: #132508;
+    color: #132709;
     /* Dark green text */
 }
 
 .contact button {
     margin-top: 20px;
     padding: 10px 20px;
-    background: #BA9467;
+    background: #FFF8DC;
     /* Beige-brown background */
     border: 0;
     color: #F1EEE8;
@@ -389,14 +389,14 @@ header .menu.active+.overlay {
 }
 
 .contact button.clicked {
-    background-color: #132508;
+    background-color: #132709;
 }
 
 
 footer {
     padding: 20px 0;
     text-align: center;
-    background: #132508;
+    background: #132709;
     /* Dark green background */
     color: #F1EEE8;
     /* Light cream text */
