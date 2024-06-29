@@ -241,6 +241,18 @@ header .menu a:active {
         padding-bottom: 120px;
         /* Add bottom padding for extra space */
     }
+
+    .text-image-container {
+        flex-direction: column;
+    }
+
+    .text-image-container .responsive-image {
+        width: 100%;
+        max-width: 100%;
+        /* Ensure images are full-width on small screens */
+        height: auto;
+        margin: 10px 0;
+    }
 }
 
 .about,
@@ -350,4 +362,31 @@ footer {
 .full-size-image img {
     width: 100%;
     height: auto;
+}
+
+/* Image and text container styling */
+.text-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.responsive-image {
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.text-image-container.right .responsive-image {
+    order: 2;
+    /* Position image to the right */
+}
+
+.text-image-container.left .responsive-image {
+    order: 1;
+    /* Position image to the left */
+}
+
+.text-image-container p {
+    flex: 1;
 }
