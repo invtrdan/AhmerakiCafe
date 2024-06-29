@@ -346,3 +346,8 @@ footer {
     z-index: 10000;
     /* Ensure it stays on top */
 }
+
+.full-size-image img {
+    width: 100%;
+    height: auto;
+}
