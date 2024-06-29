@@ -408,19 +408,22 @@ footer {
     /* Align children to stretch to fill the container */
     justify-content: space-between;
     /* Space out children evenly */
+    width: 100%;
 }
 
 .text-box,
 .image-box {
-    flex: 1;
+    flex: 1 1 50%;
     /* Each box takes up equal space */
     padding: 20px;
     /* Add some padding around the content */
+    overflow: hidden;
 }
 
 .text-box {
     background-color: #F1EEE8;
     /* Light cream background */
+    padding: 20px;
 }
 
 .image-box {
