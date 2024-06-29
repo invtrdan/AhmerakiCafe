@@ -216,6 +216,11 @@ header .menu a:active {
         max-width: 200px;
         /* Adjust logo size for smaller screens */
     }
+
+    .container {
+        flex-direction: column;
+        /* Stack flex items vertically */
+    }
 }
 
 .hero {
