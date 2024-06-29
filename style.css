@@ -53,14 +53,13 @@ header .menu.active+.overlay {
     display: block;
 }
 
-
 header {
     background: #132709;
     /* Dark green background */
     color: #F1EEE8;
     /* Light cream text */
     padding: 5px 0;
-    /* height of navigation bar */
+    /* Height of navigation bar */
     border-bottom: #BA9467 5px solid;
     /* Beige-brown border */
     display: flex;
@@ -107,7 +106,8 @@ header a {
     font-size: 16px;
 }
 
-header a:hover {
+header a:hover,
+header .menu a:hover {
     color: #BA9467;
     /* Beige-brown hover color */
 }
@@ -115,7 +115,6 @@ header a:hover {
 header .hamburger {
     display: none;
 }
-
 
 header .menu {
     display: none;
@@ -157,7 +156,6 @@ header .menu a:active {
     /* Change font color to gold on click */
 }
 
-
 @media (max-width: 768px) {
     header {
         height: 120px;
@@ -189,7 +187,6 @@ header .menu a:active {
         transform: translateY(-50%);
     }
 
-
     header .hamburger span {
         background: #F1EEE8;
         /* Light cream */
@@ -199,11 +196,6 @@ header .menu a:active {
         width: 25px;
     }
 
-    header .menu a:active {
-        color: #BA9467;
-        /* Change font color to gold on click */
-    }
-
     header ul.active {
         display: flex;
     }
@@ -211,27 +203,18 @@ header .menu a:active {
     header li {
         text-align: center;
         padding: 15px 0;
-        /* border-top: 1px solid #BA9467; */
-        /* Beige-brown border */
-    }
-
-    header .hamburger {
-        display: flex;
-        bottom: 0;
-    }
-
-    header .hamburger:active span {
-        background: #BA9467;
-        bottom: 0;
-        /* Change color of the hamburger menu when tapped */
     }
 
     header .logo {
         position: absolute;
         top: 15px;
         left: 50%;
-        /* bottom: 15px; */
         transform: translateX(-50%);
+    }
+
+    header .logo img {
+        max-width: 200px;
+        /* Adjust logo size for smaller screens */
     }
 }
 
@@ -258,42 +241,6 @@ header .menu a:active {
         padding-bottom: 120px;
         /* Add bottom padding for extra space */
     }
-
-    header .logo img {
-        max-width: 200px;
-        /* Adjust logo size for smaller screens */
-    }
-
-    header .menu a:active {
-        color: #BA9467;
-        /* Change font color to gold on click */
-    }
-
-    header .menu a:hover {
-        color: #BA9467;
-        /* Change font color to gold on hover */
-    }
-
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        /* Cover the entire viewport height */
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Semi-transparent black overlay */
-        display: none;
-        /* Initially hide the overlay */
-        z-index: 9999;
-        /* Set a high z-index to ensure the overlay covers all other content */
-    }
-
-    header .menu.active+.overlay {
-        display: block;
-        /* Display the overlay when the menu is active */
-    }
-
 }
 
 .about,
@@ -326,13 +273,6 @@ header .menu a:active {
 
 .menu ul {
     text-align: center;
-}
-
-.about p {
-    text-align: left;
-}
-
-.menu ul {
     list-style: none;
     padding: 0;
 }
@@ -342,26 +282,9 @@ header .menu a:active {
     font-size: 18px;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black overlay */
-    display: none;
-    /* Initially hide the overlay */
-    z-index: 9999;
-    /* Set a high z-index to ensure the overlay covers all other content */
+.about p {
+    text-align: left;
 }
-
-header .menu.active+.overlay {
-    display: block;
-    /* Display the overlay when the menu is active */
-}
-
-
 
 .contact form {
     display: flex;
@@ -402,7 +325,6 @@ header .menu.active+.overlay {
     background-color: #132709;
 }
 
-
 footer {
     padding: 20px 0;
     text-align: center;
@@ -411,4 +333,16 @@ footer {
     color: #F1EEE8;
     /* Light cream text */
     margin-top: auto;
+}
+
+.sticky-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    z-index: 10000;
+    /* Ensure it stays on top */
 }
